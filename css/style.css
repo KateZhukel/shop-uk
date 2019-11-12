@@ -1,0 +1,87 @@
+/*styles for general block*/
+html, body, p {
+    margin: 0;
+    padding: 0;
+    font-size: 100%;
+}
+
+
+/*mob-promotion*/
+.mob-bl{
+    max-width: 360px;
+    margin: 0 auto;
+    font-family: 'Roboto', sans-serif;
+}
+.mob-bl__header {
+    width: 100%;
+}
+.mob-bl__header-h {
+    padding: 12px 15px;
+    box-sizing: border-box;
+    text-align: center;
+    font-size: 1.1em;
+    font-weight: bold;
+    line-height: 21px;
+    text-transform: uppercase;
+    background: #F7F7F7;
+}
+
+
+/*mob-menu*/
+.mob-bl__header-check {
+    background: #D6D6D6;
+}
+.mob-bl__header-check-btn-wrap {
+    padding: 7px 15px;
+    display: flex;
+    font-size: 14px;
+    line-height: 16px;
+}
+.mob-bl__header-check-btn {
+    margin-right: 15px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.mob-bl__header-check-btn-text {
+    margin-right: 3px;
+}
+.main {
+    transform: rotate(180deg);
+}
+/*mob-tabs*/
+.mob-bl__tab-content--new {
+    display: none;
+}
+.mob-bl__tabs{
+    display: flex;
+}
+.mob-bl__tab-link {
+    width: 50%;
+    padding: 8px 50px;
+    text-transform: uppercase;
+    border: none;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    position: relative;
+    display: flex;
+    outline: none;
+}
+.mob-bl__tab-link p {
+    font-size: 12px;
+}
+.mob-bl__tab-link--orange {
+    background-color: #FF8A00;
+}
+.mob-bl__tab-link--green {
+    background-color: #95C117;
+
+}
+.mob-bl__tab-link .fas.fa-exchange-alt {
+    transform: rotate(90deg);
+    margin-left: 5px;
+}
+.mob-bl__tab-link--green .fas.fa-exchange-alt, .mob-bl__tab-link--green p {
+    opacity: 50%;
+}

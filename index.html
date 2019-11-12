@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <title>Top promotions</title>
-    <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
-
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/libs/css/fontawesome.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
 </head>
 <body>
 <div class="mob-bl">
@@ -13,21 +13,43 @@
         <div class="mob-bl__header-h">
             <p>Лучшие акции и скидки украины</p>
         </div>
-        <div class="mob-bl__header-m">
-            <div class="mob-bl__header-m-btn-wrap">
-                <div class="mob-bl__header-m-btn mob-bl__header-m-btn--category">
-                    <div class="mob-bl__header-m-btn-text">Категории</div>
-                    <div class="mob-bl__header-m-btn-img-wrap">
-                        <img class="mob-bl__header-m-btn-img mob-bl__header-m-btn-img--category" src="img/icon/arrow-down.png" alt="">
+        <div class="mob-bl__header-check">
+            <div class="mob-bl__header-check-btn-wrap">
+                <div class="mob-bl__header-check-btn mob-bl__header-check-btn--category">
+                    <div class="mob-bl__header-check-btn-text">Категории</div>
+                    <div class="mob-bl__header-check-btn-img-wrap">
+                        <img class="mob-bl__header-check-btn-img mob-bl__header-check-btn-img--category" src="img/icon/arrow-down.png" alt="">
                     </div>
                 </div>
-                <div class="mob-bl__header-m-btn mob-bl__header-m-btn--type">Тип</div>
-                <div class="mob-bl__header-m-btn-img-wrap">
-                    <img class="mob-bl__header-m-btn-img mob-bl__header-m-btn-img--type" src="img/icon/arrow-down.png" alt="">
+                <div class="mob-bl__header-check-btn mob-bl__header-check-btn--type">Тип</div>
+                <div class="mob-bl__header-check-btn-img-wrap">
+                    <img class="mob-bl__header-check-btn-img mob-bl__header-check-btn-img--type" src="img/icon/arrow-down.png" alt="">
                 </div>
             </div>
-            <div></div>
         </div>
+
+        <!--Tabs-->
+        <div class="mob-bl__tabs">
+            <button class="mob-bl__tab-link mob-bl__tab-link--orange" onclick="openTab(event, 'Hot')">
+                <p>Горящие</p>
+                <i class="fas fa-exchange-alt"></i>
+            </button>
+            <button class="mob-bl__tab-link mob-bl__tab-link--green" onclick="openTab(event, 'New')">
+                <p>Новые</p>
+                <i class="fas fa-exchange-alt"></i>
+            </button>
+        </div>
+
+        <div id="Hot" class="mob-bl__tab-content">
+            <div class="mob-bl__tab-swiper-wrap">
+
+            </div>
+        </div>
+        <div id="New" class="mob-bl__tab-content mob-bl__tab-content--new">
+            <h3>New</h3>
+        </div>
+        <!--End Tabs-->
+
     </header>
 </div>
 
