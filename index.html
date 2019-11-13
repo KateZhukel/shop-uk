@@ -6,6 +6,8 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/libs/css/fontawesome.css">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css">
+    <link rel="stylesheet" href="css/swiper/swiper.min.css">
+    <meta name="viewport" content="width=device-width">
 </head>
 <body>
 <div class="mob-bl">
@@ -21,13 +23,86 @@
                         <img class="mob-bl__header-check-btn-img mob-bl__header-check-btn-img--category" src="img/icon/arrow-down.png" alt="">
                     </div>
                 </div>
-                <div class="mob-bl__header-check-btn mob-bl__header-check-btn--type">Тип</div>
-                <div class="mob-bl__header-check-btn-img-wrap">
-                    <img class="mob-bl__header-check-btn-img mob-bl__header-check-btn-img--type" src="img/icon/arrow-down.png" alt="">
+                <div class="mob-bl__header-check-btn mob-bl__header-check-btn--type">
+                    <div class="mob-bl__header-check-btn-text">Тип</div>
+                    <div class="mob-bl__header-check-btn-img-wrap">
+                        <img class="mob-bl__header-check-btn-img mob-bl__header-check-btn-img--type" src="img/icon/arrow-down.png" alt="">
+                    </div>
                 </div>
             </div>
+            <div class="check-category">
+                <form action="">
+                    <div>
+                        <input type="checkbox" id="ind1" name="scales">
+                        <label for="ind1">Бытовая техника, интерьер</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ind2" name="scales">
+                        <label for="ind2">Компьютеры и ноутбуки</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ind3" name="scales">
+                        <label for="ind3">Бытовая техника, интерьер</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ind4" name="scales">
+                        <label for="ind4">Компьютеры и ноутбуки</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ind5" name="scales">
+                        <label for="ind5">Бытовая техника, интерьер</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ind6" name="scales">
+                        <label for="ind6">Компьютеры и ноутбуки</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ind7" name="scales">
+                        <label for="ind7">Бытовая техника, интерьер</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ind8" name="scales">
+                        <label for="ind8">Компьютеры и ноутбуки</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ind9" name="scales">
+                        <label for="ind9">Бытовая техника, интерьер</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="ind10" name="scales">
+                        <label for="ind10">Компьютеры и ноутбуки</label>
+                    </div>
+                    <div class="check-category-btn">
+                        <button class="check-category-btn__reset" type="reset" value="Reset">Сбросить</button>
+                        <button class="check-category-btn__show">Показать</button>
+                    </div>
+                </form>
+            </div>
+            <div class="check-type">
+                <form action="">
+                    <div>
+                        <input type="checkbox" id="present" name="scales">
+                        <label for="present">С подарками</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="stock" name="scales">
+                        <label for="stock">Со скидками</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="prize" name="scales">
+                        <label for="prize">Розыгрыш призов</label>
+                    </div>
+                    <div>
+                        <input type="checkbox" id="novelty" name="scales">
+                        <label for="novelty">Новинка</label>
+                    </div>
+                    <div class="check-type-btn">
+                        <button class="check-type-btn__reset" type="reset" value="Reset">Сбросить</button>
+                        <button class="check-type-btn__show">Показать</button>
+                    </div>
+                </form>
+            </div>
         </div>
-
         <!--Tabs-->
         <div class="mob-bl__tabs">
             <button class="mob-bl__tab-link mob-bl__tab-link--orange" onclick="openTab(event, 'Hot')">
@@ -43,6 +118,137 @@
         <div id="Hot" class="mob-bl__tab-content">
             <div class="mob-bl__tab-swiper-wrap">
 
+                <div class="mob-bl__tab-swiper-container swiper-container">
+                    <div class="mob-bl__tab-swiper-wrapper swiper-wrapper">
+                        <div class="mob-bl__tab-swiper-slide swiper-slide">
+
+                            <div class="mob-bl__tab-swiper-slide-wrap">
+                                <div class="mob-bl__tab-swiper-slide__img-wrap">
+                                    <img class="mob-bl__tab-swiper-slide__img" src="img/bg-img/stollen.png" alt="">
+                                </div>
+                                <div class="mob-bl__tab-swiper-slide__text-wrap">
+                                    <p>Пирог Kuchenmeister Рождественский 500 г (897579001206)</p>
+                                </div>
+                                <div class="mob-bl__tab-swiper-slide__price-wrap">
+                                    <div class="mob-bl__tab-swiper-slide__price-left">
+                                        <div class="mob-bl__tab-swiper-slide__price mob-bl__tab-swiper-slide__price--through">
+                                            <p>135 грн.</p>
+                                        </div>
+                                        <div class="mob-bl__tab-swiper-slide__price  mob-bl__tab-swiper-slide__price--orange">
+                                            <p>119 грн.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mob-bl__tab-swiper-slide-basket">
+                                        <img src="img/icon/basket-green.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="mob-bl__tab-swiper-slide-wrap">
+                                <div class="mob-bl__tab-swiper-slide__img-wrap">
+                                    <img class="mob-bl__tab-swiper-slide__img" src="img/bg-img/stollen2.png" alt="">
+                                </div>
+                                <div class="mob-bl__tab-swiper-slide__text-wrap">
+                                    <p>Пирог Kuchenmeister Марципановый с апельсином 500 г (4101540756252)</p>
+                                </div>
+                                <div class="mob-bl__tab-swiper-slide__price-wrap">
+                                    <div class="mob-bl__tab-swiper-slide__price-left">
+                                        <div class="mob-bl__tab-swiper-slide__price mob-bl__tab-swiper-slide__price--through">
+                                            <p>1350 грн.</p>
+                                        </div>
+                                        <div class="mob-bl__tab-swiper-slide__price  mob-bl__tab-swiper-slide__price--orange">
+                                            <p>1246 грн.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mob-bl__tab-swiper-slide-basket">
+                                        <img src="img/icon/basket-green.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="mob-bl__tab-swiper-slide-wrap">
+                                <div class="mob-bl__tab-swiper-slide__img-wrap">
+                                    <img class="mob-bl__tab-swiper-slide__img" src="img/bg-img/stollen2.png" alt="">
+                                </div>
+                                <div class="mob-bl__tab-swiper-slide__text-wrap">
+                                    <p>Пирог Kuchenmeister Марципановый с апельсином 500 г (4101540756252)</p>
+                                </div>
+                                <div class="mob-bl__tab-swiper-slide__price-wrap">
+                                    <div class="mob-bl__tab-swiper-slide__price-left">
+                                        <div class="mob-bl__tab-swiper-slide__price mob-bl__tab-swiper-slide__price--through">
+                                            <p>135 грн.</p>
+                                        </div>
+                                        <div class="mob-bl__tab-swiper-slide__price  mob-bl__tab-swiper-slide__price--orange">
+                                            <p>119 грн.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mob-bl__tab-swiper-slide-basket">
+                                        <img src="img/icon/basket-green.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="swiper-slide">
+
+                            <div class="mob-bl__tab-swiper-slide-wrap">
+                                <div class="mob-bl__tab-swiper-slide__img-wrap">
+                                    <img class="mob-bl__tab-swiper-slide__img" src="img/bg-img/stollen2.png" alt="">
+                                </div>
+                                <div class="mob-bl__tab-swiper-slide__text-wrap">
+                                    <p>Пирог Kuchenmeister Марципановый с апельсином 500 г (4101540756252)</p>
+                                </div>
+                                <div class="mob-bl__tab-swiper-slide__price-wrap">
+                                    <div class="mob-bl__tab-swiper-slide__price-left">
+                                        <div class="mob-bl__tab-swiper-slide__price mob-bl__tab-swiper-slide__price--through">
+                                            <p>135 грн.</p>
+                                        </div>
+                                        <div class="mob-bl__tab-swiper-slide__price  mob-bl__tab-swiper-slide__price--orange">
+                                            <p>119 грн.</p>
+                                        </div>
+                                    </div>
+                                    <div class="mob-bl__tab-swiper-slide-basket">
+                                        <img src="img/icon/basket-green.png" alt="">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Add Arrows -->
+
+                </div>
+                <div class="mob-bl__tab-swiper-btn-next swiper-button-next"></div>
+                <div class="mob-bl__tab-swiper-btn-prev swiper-button-prev"></div>
+            </div>
+            <div class="stock">
+                <div class="stock__img-wrap"></div>
+                <div class="hours-bl">
+                    <div class="hours-bl__top">
+                        <p>До конца акции осталось:</p>
+                        <div class="hours-js">09:15:28:12</div>
+                    </div>
+                    <div class="hours-bl__bottom">
+                        <p>Скидки до 50% на матрасы Come-for + оплата частями до 8 месяцев!</p>
+                    </div>
+                </div>
+            </div>
+            <div class="stock stock--come-for">
+                <div class="stock__img-wrap stock__img-wrap--come-for"></div>
+                <div class="hours-bl">
+                    <div class="hours-bl__top">
+                        <p>До конца акции осталось:</p>
+                        <div class="hours-js">09:15:28:12</div>
+                    </div>
+                    <div class="hours-bl__bottom">
+                        <p>Скидки до 50% на матрасы Come-for + оплата частями до 8 месяцев!</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div id="New" class="mob-bl__tab-content mob-bl__tab-content--new">
@@ -54,6 +260,8 @@
 </div>
 
 <script src="js/jQuery_v3.4.1.js"></script>
+<script src="js/swiper/swiper.min.js"></script>
 <script src="js/main.js"></script>
+
 </body>
 </html>

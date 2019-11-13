@@ -1,5 +1,5 @@
 /*styles for general block*/
-html, body, p {
+html, body, p, input {
     margin: 0;
     padding: 0;
     font-size: 100%;
@@ -16,7 +16,7 @@ html, body, p {
     width: 100%;
 }
 .mob-bl__header-h {
-    padding: 12px 15px;
+    padding: 12px 14px;
     box-sizing: border-box;
     text-align: center;
     font-size: 1.1em;
@@ -27,18 +27,28 @@ html, body, p {
 }
 
 
-/*mob-menu*/
+/*mob-check*/
+.mob-bl__header-check-btn-img {
+    transition: .3s;
+}
+.mob-bl__header-check-btn-img-wrap {
+    display: flex;
+    align-items: center;
+}
+.mob-bl__header-check-btn.mob-bl__header-check-btn--type {
+    margin-right: 3px;
+}
 .mob-bl__header-check {
     background: #D6D6D6;
 }
 .mob-bl__header-check-btn-wrap {
-    padding: 7px 15px;
+    padding: 7px 14px;
     display: flex;
     font-size: 14px;
     line-height: 16px;
 }
 .mob-bl__header-check-btn {
-    margin-right: 15px;
+    margin-right: 21px;
     display: flex;
     align-items: center;
     cursor: pointer;
@@ -84,4 +94,214 @@ html, body, p {
 }
 .mob-bl__tab-link--green .fas.fa-exchange-alt, .mob-bl__tab-link--green p {
     opacity: 50%;
+}
+.mob-bl__tab-swiper-slide__img-wrap {
+    box-sizing: border-box;
+    padding: 10px;
+    min-height: 150px;
+    border: 1px solid #ebebeb;
+    display: flex;
+    align-items: center;
+}
+.mob-bl__tab-swiper-wrap {
+    margin-top: 10px;
+}
+.mob-bl__tab-swiper-wrap{
+    position: relative;
+}
+.mob-bl__tab-swiper-btn-next.swiper-button-next{
+    right: -14px;
+    background-image: url("../img/icon/arr-right-slider.png");
+    display: block;
+    background-repeat: no-repeat;
+    top: 45%;
+    width: 11px;
+}
+.mob-bl__tab-swiper-btn-prev.swiper-button-prev{
+    left: -13px;
+    background-image: url("../img/icon/arr-left-slider.png");
+    display: block;
+    background-repeat: no-repeat;
+    top: 43%;
+    width: 11px;
+}
+.swiper-button-next {
+    display: none;
+}
+
+.mob-bl__tab-content {
+    padding: 0 20px;
+}
+.mob-bl__tab-swiper-btn-next.swiper-button-next:after,  .mob-bl__tab-swiper-btn-prev.swiper-button-prev:after {
+    content: '';
+}
+.mob-bl__tab-swiper-btn-next.swiper-button-next:focus,  .mob-bl__tab-swiper-btn-prev.swiper-button-prev:focus {
+    outline: none;
+}
+.mob-bl__tab-swiper-slide__text-wrap p {
+    font-size: 8px;
+    line-height: 9px;
+}
+.mob-bl__tab-swiper-slide__text-wrap {
+    margin-top: 5px;
+    margin-bottom: 10px;
+}
+.mob-bl__tab-swiper-slide__price p {
+    font-size: 10px;
+    line-height: 12px;
+}
+.mob-bl__tab-swiper-slide__price--through {
+    color: #B6B6B6;
+    text-decoration: line-through;
+}
+.mob-bl__tab-swiper-slide__price--orange {
+    color: #FF8A00;
+    font-weight: bold;
+}
+.mob-bl__tab-swiper-slide__price-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+.stock {
+    margin-top: 25px;
+    min-height: 260px;
+}
+.stock__img-wrap {
+    background-image: url(../img/bg-img/belgey-chocolate.png);
+    background-size: cover;
+    height: 260px;
+}
+.hours-bl {
+    background-color: #F1F1F1;
+    padding: 10px 11px;
+}
+.hours-bl__top {
+    display: flex;
+}
+.hours-bl__top p {
+    font-size: 6px;
+    line-height: 7px;
+    margin-right: 20px;
+}
+.hours-js {
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #FF8A00;
+}
+
+.hours-bl__bottom p {
+    font-size: 12px;
+    line-height: 14px;
+    color: #000000;
+    margin-top: 13px;
+}
+.stock--come-for {
+    margin-top: 0;
+}
+.stock__img-wrap.stock__img-wrap--come-for {
+    background-image: url(../img/bg-img/come-for.png);
+
+}
+.mob-bl__header-check {
+    position: relative;
+}
+.check-category, .check-type {
+    position: absolute;
+    width: 100%;
+    background-color: #F6F6F6;
+    z-index: 11;
+    top: 60px;
+    display: none;
+}
+.check-category--block, .check-type--block {
+    display: block;
+}
+
+.check-category form, .check-type form {
+    padding: 10px 14px;
+    background-color: #F6F6F6;
+}
+.check-category div, .check-type div {
+    margin-bottom: 26px;
+}
+
+
+input[type="checkbox"]:checked,
+input[type="checkbox"]:not(:checked)
+{
+    position: absolute;
+    left: -9999px;
+}
+input[type="checkbox"]:checked + label,
+input[type="checkbox"]:not(:checked) + label {
+    display: inline-block;
+    position: relative;
+    padding-left: 28px;
+    line-height: 20px;
+    cursor: pointer;
+}
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 18px;
+    height: 18px;
+    border: 1px solid #E3E3E3;;
+    background-color: #ffffff;
+}
+input[type="checkbox"]:checked + label:before,
+input[type="checkbox"]:not(:checked) + label:before {
+    border-radius: 3px;
+}
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    content: "";
+    position: absolute;
+    -webkit-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+input[type="checkbox"]:checked + label:after,
+input[type="checkbox"]:not(:checked) + label:after {
+    left: 3px;
+    top: 4px;
+    width: 10px;
+    height: 5px;
+    border-radius: 1px;
+    border-left: 4px solid #818181;;
+    border-bottom: 4px solid #818181;;
+    -webkit-transform: rotate(-45deg);
+    -moz-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+}
+input[type="checkbox"]:not(:checked) + label:after{
+    opacity: 0;
+}
+
+input[type="checkbox"]:checked + label:after{
+    opacity: 1;
+}
+.check-category-btn, .check-type-btn {
+    display: flex;
+    justify-content: space-between;
+}
+.check-category-btn__reset, .check-type-btn__reset, .check-category-btn__show, .check-type-btn__show {
+    background: #D6D6D6;
+    outline: none;
+    border: none;
+    color: #fff;
+    text-transform: uppercase;
+    width: 146px;
+    padding: 13px;
+    cursor: pointer;
+}
+.check-category-btn__show, .check-type-btn__show {
+    background: #95C117;
 }
