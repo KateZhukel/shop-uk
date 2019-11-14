@@ -376,3 +376,12 @@ input[type="checkbox"]:checked + label:after{
 .hours-bl__top p {
     color: #000;
 }
+.hours-js {
+    display: flex;
+    position: relative;
+    justify-content: center;
+}
+.hours-bl__top {
+    display: flex;
+    flex-direction: column;
+}
