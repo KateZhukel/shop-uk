@@ -165,6 +165,7 @@ html, body, p, input {
 .stock {
     margin-top: 25px;
     min-height: 260px;
+    text-decoration: none;
 }
 .stock__img-wrap {
     background-image: url(../img/bg-img/belgey-chocolate.png);
@@ -212,7 +213,7 @@ html, body, p, input {
     width: 100%;
     background-color: #F6F6F6;
     z-index: 11;
-    top: 60px;
+    top: 30px;
     display: none;
 }
 .check-category--block, .check-type--block {
@@ -304,4 +305,74 @@ input[type="checkbox"]:checked + label:after{
 }
 .check-category-btn__show, .check-type-btn__show {
     background: #95C117;
+}
+.mob-bl__tab-swiper-slide__img-wrap img {
+    max-width: 100%;
+}
+.stock {
+    display: block;
+}
+/*page stock*/
+.mob-bl__stock-flex-row {
+    display: flex;
+    justify-content: space-between;
+}
+.mob-bl__stock-flex-el-wrap {
+    width: 150px;
+
+}
+.mob-bl__stock-flex-img-wrap {
+    border: 1px solid #EBEBEB;
+    min-height: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mob-bl__stock-flex-row {
+    margin-top: 20px;
+}
+.mob-bl__stock-flex-text {
+    margin-top: 10px;
+    margin-bottom: 15px;
+}
+.mob-bl__stock-flex-text p {
+    font-size: 8px;
+    line-height: 9px;
+}
+.mob-bl__stock-flex-left-price {
+    font-size: 10px;
+    line-height: 12px;
+    text-decoration-line: line-through;
+    color: #B6B6B6;
+}
+
+.mob-bl__stock-flex-left-price--orange {
+    color: #FF8A00;
+    font-weight: bold;
+}
+.mob-bl__stock-flex-left-bl {
+    display: flex;
+    justify-content: space-between;
+}
+.mob-bl__header-check-btn--back {
+    display: flex;
+    font-size: 14px;
+    line-height: 16px;
+    text-decoration: none;
+    color: #000;
+    align-items: center;
+
+}
+.mob-bl__header-check-btn--back:before {
+    background-image: url("../img/icon/arr-left.png");
+    background-repeat: no-repeat;
+    display: block;
+    content: '';
+    width: 8px;
+    height: 13px;
+    background-size: contain;
+    margin-right: 7px;
+}
+.hours-bl__top p {
+    color: #000;
 }

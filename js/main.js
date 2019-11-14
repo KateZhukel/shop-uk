@@ -7,8 +7,8 @@ var swiper = new Swiper('.swiper-container', {
     loop: false,
     loopFillGroupWithBlank: true,
     navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.mob-bl__tab-swiper-btn-next.swiper-button-next',
+        prevEl: '.mob-bl__tab-swiper-btn-prev.swiper-button-prev',
     },
 });
 
@@ -26,28 +26,18 @@ function openTab(evt, tabName) {
     }
     document.getElementById(tabName).style.display = "block";
     evt.currentTarget.className += " active";
-    console.log('test');
 }
 
 /*Clickable check*/
 $(document).ready(function(){
     $(".mob-bl__header-check-btn--category").click(function(){
         $(".mob-bl__header-check-btn-img--category").toggleClass("main");
-
+        $(".check-category").toggleClass("check-category--block");
     });
 
     $(".mob-bl__header-check-btn--type").click(function(){
         $(".mob-bl__header-check-btn-img--type").toggleClass("main");
-    });
-
-
-    $(".mob-bl__header-check-btn--category").click(function(){
-        $(".check-category").toggleClass("check-category--block");
-
-    });
-    $(".mob-bl__header-check-btn--type").click(function(){
         $(".check-type").toggleClass("check-type--block");
-        console.log('test');
     });
 
 });
