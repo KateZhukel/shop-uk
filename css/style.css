@@ -169,8 +169,10 @@ html, body, p, input {
 }
 .stock__img-wrap {
     background-image: url(../img/bg-img/belgey-chocolate.png);
-    background-size: cover;
     height: 260px;
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .hours-bl {
     background-color: #F1F1F1;
@@ -309,6 +311,9 @@ input[type="checkbox"]:checked + label:after{
 .mob-bl__tab-swiper-slide__img-wrap img {
     max-width: 100%;
 }
+.mob-bl__tab-swiper-slide.swiper-slide.swiper-slide-active {
+
+}
 .stock {
     display: block;
 }
@@ -384,4 +389,61 @@ input[type="checkbox"]:checked + label:after{
 .hours-bl__top {
     display: flex;
     flex-direction: column;
+}
+
+
+
+.timer-wrap {
+    display: flex;
+    margin: 0 auto;
+}
+#timer, #timer-two, #timer-stock, #timer-new, #timer-new2 {
+    display: flex;
+    line-height: 1;
+    font-size: 40px;
+    font-weight: bold;
+    justify-content: space-around;
+    width: 126px;
+}
+
+#timer  span, #timer-two span, #timer-stock span, #timer-new span, #timer-new2 span{
+    display: block;
+    font-size: 10px;
+    color: #000000;
+    font-weight: normal;
+    text-align: center;
+}
+
+#days, #days-two, #days-stock, #days-new, #days-new2  {
+    font-size: 20px;
+    color: #FF8A00;
+    position: relative;
+
+}
+#hours, #hours-two, #hours-stock,  #hours-new, #hours-new2 {
+    font-size: 20px;
+    color: #FF8A00;
+    position: relative;
+
+}
+#minutes, #minutes-two, #minutes-stock,  #minutes-new,  #minutes-new2 {
+    font-size: 20px;
+    color: #FF8A00;
+    position: relative;
+
+}
+#seconds, #seconds-two, #seconds-stock, #seconds-new, #seconds-new2 {
+    font-size: 20px;
+    color: #FF8A00;
+    position: relative;
+
+}
+
+#timer .points, #timer-two .points, #timer-stock .points, #timer-new .points, #timer-new2 .points  {
+    font-weight: bold;
+    position: absolute;
+    top: 0;
+    font-size: 19px;
+    color: #FF8A00;
+    left: 25px;
 }

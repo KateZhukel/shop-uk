@@ -1,6 +1,5 @@
-
-/*Swiper-slider*/
-var swiper = new Swiper('.swiper-container', {
+/*Swiper-slider 2*/
+var mySwiper = new Swiper('.mob-bl__tab-swiper-container', {
     slidesPerView: 2,
     spaceBetween: 10,
     slidesPerGroup: 1,
@@ -30,56 +29,80 @@ function openTab(evt, tabName) {
 
 /*Clickable check*/
 $(document).ready(function(){
+
     $(".mob-bl__header-check-btn--category").click(function(){
         $(".mob-bl__header-check-btn-img--category").toggleClass("main");
         $(".check-category").toggleClass("check-category--block");
+        $(".check-type").removeClass("check-type--block");
+        $(".mob-bl__header-check-btn-img--type").removeClass("main");
+        $("#Hot").toggleClass('none');
     });
 
     $(".mob-bl__header-check-btn--type").click(function(){
         $(".mob-bl__header-check-btn-img--type").toggleClass("main");
         $(".check-type").toggleClass("check-type--block");
+        $(".check-category").removeClass("check-category--block");
+        $(".mob-bl__header-check-btn-img--category").removeClass("main");
     });
 
 
 
-    /*timer*/
+/*timer*/
 
-// Set the date we're counting down to
-    var countDownDate = new Date("Nov 23, 2019 15:37:25").getTime();
+    function makeTimer() {
 
-// Update the count down every 1 second
-    var x = setInterval(function() {
+        //		var endTime = new Date("29 April 2018 9:56:00 GMT+01:00");
+        var endTime = new Date("29 Dec 2019 9:56:00 GMT+01:00");
+        endTime = (Date.parse(endTime) / 1000);
 
-        // Get today's date and time
-        var now = new Date().getTime();
+        var now = new Date();
+        now = (Date.parse(now) / 1000);
 
-        // Find the distance between now and the count down date
-        var distance = countDownDate - now;
+        var timeLeft = endTime - now;
 
-        // Time calculations for days, hours, minutes and seconds
-        var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-        var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-        var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-        var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+        var days = Math.floor(timeLeft / 86400);
+        var hours = Math.floor((timeLeft - (days * 86400)) / 3600);
+        var minutes = Math.floor((timeLeft - (days * 86400) - (hours * 3600 )) / 60);
+        var seconds = Math.floor((timeLeft - (days * 86400) - (hours * 3600) - (minutes * 60)));
 
-        // Output the result in an element with id="demo"
-        document.getElementById("hour-js").innerHTML = days + ": " + hours + ": "
-            + minutes + ": " + seconds + "";
-        document.getElementById("hour-js-bot").innerHTML = days + ": " + hours + ": "
-            + minutes + ": " + seconds + "";
+        if (hours < "10") { hours = "0" + hours; }
+        if (minutes < "10") { minutes = "0" + minutes; }
+        if (seconds < "10") { seconds = "0" + seconds; }
 
-        // If the count down is over, write some text
-        if (distance < 0) {
-            clearInterval(x);
-            document.getElementById("hour-js").innerHTML = "EXPIRED";
-        }
-    }, 1000);
+        $("#days").html(days + "<span class='points'>:</span>" + "<span>дни</span>");
+        $("#hours").html(hours + "<span class='points'>:</span>" + "<span>часы</span>");
+        $("#minutes").html(minutes + "<span class='points'>:</span>"  + "<span>мин</span>");
+        $("#seconds").html(seconds  + "<span>сек</span>");
 
 
+        $("#days-two").html(days + "<span class='points'>:</span>" + "<span>дни</span>");
+        $("#hours-two").html(hours + "<span class='points'>:</span>" + "<span>часы</span>");
+        $("#minutes-two").html(minutes + "<span class='points'>:</span>"  + "<span>мин</span>");
+        $("#seconds-two").html(seconds  + "<span>сек</span>");
 
 
+        $("#days-stock").html(days + "<span class='points'>:</span>" + "<span>дни</span>");
+        $("#hours-stock").html(hours + "<span class='points'>:</span>" + "<span>часы</span>");
+        $("#minutes-stock").html(minutes + "<span class='points'>:</span>"  + "<span>мин</span>");
+        $("#seconds-stock").html(seconds  + "<span>сек</span>");
+
+        $("#days-new").html(days + "<span class='points'>:</span>" + "<span>дни</span>");
+        $("#hours-new").html(hours + "<span class='points'>:</span>" + "<span>часы</span>");
+        $("#minutes-new").html(minutes + "<span class='points'>:</span>"  + "<span>мин</span>");
+        $("#seconds-new").html(seconds  + "<span>сек</span>");
+
+        $("#days-new2").html(days + "<span class='points'>:</span>" + "<span>дни</span>");
+        $("#hours-new2").html(hours + "<span class='points'>:</span>" + "<span>часы</span>");
+        $("#minutes-new2").html(minutes + "<span class='points'>:</span>"  + "<span>мин</span>");
+        $("#seconds-new2").html(seconds  + "<span>сек</span>");
+
+    }
+
+    setInterval(function() { makeTimer(); }, 1000);
 
 });
+
+
 
 
 
